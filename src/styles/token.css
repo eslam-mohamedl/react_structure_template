@@ -1,0 +1,48 @@
+/* -------------------------------------------------- */
+/*  Design Tokens   */
+/* -------------------------------------------------- */
+
+@layer theme {
+  :root {
+    /* Brand Colors */
+    --color-primary: #00b7c1;
+    --color-secondary: #ffa630;
+
+    /* UI Backgrounds */
+    --color-bg: #ffffff;
+    --color-bg-alt: #f9f9fb;
+
+    /* Text Colors */
+    --color-text-primary: #1e1f24;
+    --color-text-secondary: #62636c;
+
+    /* Dark Mode */
+    --color-bg-dark: #121212;
+    --color-bg-dark-alt: #1e1e1e;
+    --color-text-primary: #eeeef0;
+    --color-text-secondary: #b2b3bd;
+
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+
+    /* Typography */
+    --font-sans: "Inter", sans-serif;
+    --font-heading: "Poppins", sans-serif;
+
+    /* Spacing */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 20px;
+
+  }
+  /* Dark Variant */
+  :root.dark {
+    --color-bg: var(--color-bg-dark);
+    --color-bg-alt: var(--color-bg-dark-alt);
+    --color-text: var(--color-text-primary);
+    --color-form: var(--color-form-dark);
+  }
+}

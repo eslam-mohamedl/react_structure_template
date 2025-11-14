@@ -1,1 +1,72 @@
+/* Import Tailwind layers first */
 @import "tailwindcss";
+
+/* Import Design Tokens */
+@import "./token.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+/* -------------------------------------------------- */
+/*  Base Project                              */
+/* -------------------------------------------------- */
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    scroll-behavior: smooth;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+}
+/* -------------------------------------------------- */
+/*  Global Components / Utilities                     */
+/* -------------------------------------------------- */
+@layer utilities {
+  /* Brand Backgrounds */
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  .bg-secondary {
+    background-color: var(--color-secondary);
+  }
+  .bg-bg {
+    background-color: var(--color-bg);
+  }
+  .bg-bg-alt {
+    background-color: var(--color-bg-alt);
+  }
+
+  /* Text Colors */
+  .text-primary {
+    color: var(--color-primary);
+  }
+  .text-secondary {
+    color: var(--color-secondary);
+  }
+
+  /* Radius Utilities */
+  .rounded-sm {
+    border-radius: var(--radius-sm);
+  }
+  .rounded-md {
+    border-radius: var(--radius-md);
+  }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
+
+  @media (min-width: 1024px) {
+    /* tailwind lg breakpoint */
+    .container {
+      width: 92%;
+    }
+  }
+  /* Typography Helpers */
+  .heading {
+    font-family: var(--font-heading);
+    font-weight: var(--font-bold);
+  }
+}
