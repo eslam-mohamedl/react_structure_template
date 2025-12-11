@@ -3,6 +3,7 @@ This repository is a fully-structured Front-End project built with React, Tailwi
 The goal of this repo is to provide a scalable, and reusable codebase that follows modern best practices.
 It includes a complete design system, reusable UI components, global layouts, routing, services, and a consistent project structure that can be used for real production apps or as a starter template for new projects.
 
+
 ## ⭐ Key Features
 - Scalable Folder Structure — Organized by responsibility (UI, layouts, Common ,  services, routes).
 - Reusable UI Components — Buttons, Inputs, Cards, Alerts… all built with Atomic-like thinking.
